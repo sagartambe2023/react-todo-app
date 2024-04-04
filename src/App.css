@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+.addtodobtn{
+  background-color:  rgb(97, 187, 136);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todolist {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.appTitle {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.taskinput {
+  width: 500px;
+  font-size: 15px;
+  border: 2px solid rgb(97, 187, 136);
+  border-radius: 2px;
+}
+
+.Statuslist {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px 0px 50px;
+  
+}
+
+.todo-card {
+  padding: 10px;
+  background-color: green;
+  width: 250px;
+}
+
+.cardfont {
+  font-size: 20px;
+  font-weight: 400;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.lastbuttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.edittwobuttons {
+  padding-top: 15px;
+  display: flex;
+  gap: 1rem;
+}
+
+.cancel {
+  color: aliceblue;
+  border-radius: 5px;
+  border: 0px;
+  background-color: rgb(197, 77, 33);
+}
+
+.edit-mode {
+  font-size: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.todo-list {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-left: 80px;
+  margin-right: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.all, .Completed, .Not-Completed {
+  background-color: red;
+}
+
+.deletebutton {
+  background-color: red;
+  border-radius: 5px;
+  border: 0px;
+}
+.editbutton {
+  background-color: rgb(97, 187, 136);
+  border-radius: 5px;
+  border: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .todo-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .todo-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .todo-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .todolist {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
