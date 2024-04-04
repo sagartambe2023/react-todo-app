@@ -1,3 +1,10 @@
+**Todo React App**
+
+This Todo React App is a simple application built using HTML, CSS, and React hooks. It serves as a basic tool for managing daily tasks and keeping track of to-dos in a convenient manner.
+
+Deployed On : https://660ef851fed6ee3f9b633280--lighthearted-flan-2f85f8.netlify.app/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
